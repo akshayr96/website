@@ -7,7 +7,7 @@ const Banner = () => {
 	return ( 
 		<div style={{ position: 'relative' }}>
 			<Particle />
-			<div className="banner">
+			<div className="banner" style={{ height: '80vh' }}>
 				<div className="hero-text">
 					<div className="banner-hello-text">Hello, I'm</div>
 					<h1 className="banner-main-text">Akshay</h1>

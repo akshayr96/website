@@ -1,0 +1,13 @@
+.work-experience {
+	.experience-card{
+		display: flex;
+		margin: 40px 0;
+		.experience-description{
+			margin-left: 20px;
+			.role{
+				font-size: 24px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
