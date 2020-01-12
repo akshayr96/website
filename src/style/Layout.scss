@@ -1,3 +1,9 @@
 .container{
-	padding: 0 200px;
+	padding: 0 calc((100vw - 1030px) / 2 );
+}
+
+body{
+	color: white;
+	font-family: 'Ubuntu', serif;
+	font-weight: 300;
 }

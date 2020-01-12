@@ -1,0 +1,32 @@
+.banner{
+	display: flex;
+	width: 100%;
+	margin-top: 50px;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	.hero-text{
+		.banner-hello-text{
+			font-size: 40px;
+			margin-bottom: 10px;
+			color: #ff4a57;
+		}
+		.banner-main-text{
+			font-size: 100px;
+			margin-bottom: 0px;
+			font-family: 'Playfair Display', serif;
+		}
+		.banner-desc-text{
+			color: white;
+			font-size: 30px;
+			margin-top: 40px;
+		}
+	}
+	.image-container{
+		width: 50%;
+	}
+}
+
+.profile-image{
+	width: 100px;
+}
