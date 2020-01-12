@@ -2,7 +2,7 @@ import React from 'react';
 import "./../style/clients.scss"
 import Image from "../components/Image"
 
-const commonCss =  { height: '110px', margin: '10px', cursor: 'pointer', margin: '10px' }
+const commonCss =  { height: '110px', margin: '10px', cursor: 'pointer' }
 const logos = [{
 	width: '100px',
 	name: 'saint-beard.png',
@@ -31,12 +31,12 @@ const logos = [{
 const Clients = () => {
 	return ( 
 		<div className="clients section">
-			<div class="section-header">Trusted By</div>
+			<div className="section-header">Trusted By</div>
 			<div style={{ display: 'flex', justifyContent: 'space-around', padding: '20px', flexWrap: 'wrap' }}>
-				{ logos.map(logo => {
+				{ logos.map((logo, key) => {
 					const { url, width, name } = logo
 					return (
-						<div onClick={()=>window.open(url,'_blank')} style={{border: 'solid #ccc 1px'}}>
+						<div onClick={()=>window.open(url,'_blank')} style={{border: 'solid #ccc 1px'}} key={key}>
 							<Image style={{ width, ...commonCss }} imageName={name}/>
 						</div>
 					)

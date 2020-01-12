@@ -6,7 +6,7 @@ const Timeline = ({ children }) => {
 		<div className="timeline">
 			<div className="event">
 				<div className="circle"></div>
-				<div class="content">
+				<div className="content">
 					{ children }
 				</div>
 			</div>

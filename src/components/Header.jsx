@@ -8,10 +8,7 @@ const Header = ({ siteTitle }) => (
     <div className="nav-bar">
       <div>AR</div>
       <ul className="nav-items">
-        <li className="nav-item">Home</li>
-        <li className="nav-item">Projects</li>
-        <li className="nav-item">Blog</li>
-        <li className="nav-item">Contact</li>
+        <li className="nav-item">Contact Me</li>
       </ul>
     </div>
   </header>

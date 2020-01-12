@@ -8,7 +8,7 @@ const career = [{
 	logo: 'visualbi.png',
 	timeline: [{
 		role: 'Senior BI Developer',
-		duration: 'Jan, 2017 - Now'
+		duration: 'Jan, 2020 - Now'
 	},{
 		role: 'BI Developer',
 		duration: 'June, 2018 - Dec, 2019'
@@ -17,7 +17,7 @@ const career = [{
 		duration: 'June, 2017 - June, 2018'
 	}],
 	skills: 'ReactJS, Angular JS, NodeJS, HapiJS, Python Flask, PostgreSQL'
-},,{
+},{
 	orgnization: 'Redef Corp Inc, NY',
 	logo: 'tredefcorp.png',
 	timeline: [{
@@ -41,17 +41,17 @@ const WorkExperience = () => {
 			<div className="section-header">Work Experience</div>
 			<div style={{ display: 'flex' }}>
 				<div>
-					{career.map(experience => {
+					{career.map((experience, key) => {
 						const { logo, orgnization, timeline, skills } = experience
 						return (
-							<div className="experience-card">
+							<div className="experience-card" key={key}>
 								<Image style={{ width: '50px', height: '50px' }} imageName={logo} />
 								<div className="experience-description">
 									<div className="organization">{ orgnization }</div>
-										{timeline.map(timelineItem => {
+										{timeline.map((timelineItem, key) => {
 											const { role, duration } = timelineItem
 											return (
-												<Timeline>
+												<Timeline key={key}>
 													<div className="role">{ role }</div>
 													<div className="duration">{ duration }</div>
 												</Timeline>
@@ -64,9 +64,11 @@ const WorkExperience = () => {
 					})}
 				</div>
 				<div className="main-description">
-					I an a full stack developer with a little over 2.5 years of experience based out of Chennai🇮🇳
-					<br/><br/> I work mostly on JavaScript and Python when I code and Figma and Adoble Illustrator when I design.
-					<br/><br/> Apart from my professional experience, in my Senior I've designed and developed projects for numerous non tech startups
+					I am a full stack developer with a little over 2.5 years of experience based out of Chennai<span role="img">🇮🇳</span>
+					<br/><br/>
+					I work mostly on JavaScript and Python when I code and Figma and Adobe Illustrator when I design.
+					<br/><br/>
+					Apart from my professional experience, in my Senior I've designed and developed projects for numerous non-tech startups
 				</div>
 			</div>
 		</div> 
