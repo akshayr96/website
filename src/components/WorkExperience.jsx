@@ -39,27 +39,36 @@ const WorkExperience = () => {
 	return ( 
 		<div className="work-experience section">
 			<div className="section-header">Work Experience</div>
-			{career.map(experience => {
-				const { logo, orgnization, timeline, skills } = experience
-				return (
-					<div className="experience-card">
-						<Image style={{ width: '50px', height: '50px' }} imageName={logo} />
-						<div className="experience-description">
-							<div className="organization">{ orgnization }</div>
-								{timeline.map(timelineItem => {
-									const { role, duration } = timelineItem
-									return (
-										<Timeline>
-											<div className="role">{ role }</div>
-											<div className="duration">{ duration }</div>
-										</Timeline>
-									)
-								})}
-							<div className="skills">{ skills }</div>
-						</div>
-					</div>
-				)
-			})}
+			<div style={{ display: 'flex' }}>
+				<div>
+					{career.map(experience => {
+						const { logo, orgnization, timeline, skills } = experience
+						return (
+							<div className="experience-card">
+								<Image style={{ width: '50px', height: '50px' }} imageName={logo} />
+								<div className="experience-description">
+									<div className="organization">{ orgnization }</div>
+										{timeline.map(timelineItem => {
+											const { role, duration } = timelineItem
+											return (
+												<Timeline>
+													<div className="role">{ role }</div>
+													<div className="duration">{ duration }</div>
+												</Timeline>
+											)
+										})}
+									<div className="skills">{ skills }</div>
+								</div>
+							</div>
+						)
+					})}
+				</div>
+				<div className="main-description">
+					I an a full stack developer with a little over 2.5 years of experience based out of Chennai🇮🇳
+					<br/><br/> I work mostly on JavaScript and Python when I code and Figma and Adoble Illustrator when I design.
+					<br/><br/> Apart from my professional experience, in my Senior I've designed and developed projects for numerous non tech startups
+				</div>
+			</div>
 		</div> 
 	);
 }

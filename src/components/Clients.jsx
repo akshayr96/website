@@ -2,29 +2,29 @@ import React from 'react';
 import "./../style/clients.scss"
 import Image from "../components/Image"
 
-const commonCss =  { height: '120px', margin: '10px', cursor: 'pointer' }
+const commonCss =  { height: '110px', margin: '10px', cursor: 'pointer', margin: '10px' }
 const logos = [{
-	width: '110px',
+	width: '100px',
 	name: 'saint-beard.png',
 	url: 'https://www.saintbeard.com/'
 },{
-	width: '200px',
+	width: '190px',
 	name: 'nala.png',
 	url: 'http://nala.co.in/'
 },{
-	width: '120px',
+	width: '110px',
 	name: 'fit.jpg',
 	url: 'http://www.fitcampus.in/'
 },{
-	width: '100px',
+	width: '90px',
 	name: 'redefcorp.png',
 	url: 'https://redefcorp.com/'
 },{
-	width: '110px',
+	width: '100px',
 	name: 'hillstone.png',
 	url: 'http://www.hillstonegranites.in/'
 },{
-	width: '210px',
+	width: '180px',
 	name: 'vnr.jpeg',
 	url: 'http://vnrhomes.com/'
 }]
