@@ -1,5 +1,5 @@
 import React from 'react';
-import "./../style/clients.scss"
+import "./../style/Clients.scss"
 import Image from "../components/Image"
 
 const commonCss =  { height: '110px', margin: '10px', cursor: 'pointer' }
