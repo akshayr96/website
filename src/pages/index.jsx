@@ -5,6 +5,7 @@ import Banner from "../components/Banner.jsx"
 import WorkExperience from '../components/WorkExperience.jsx'
 import Education from "../components/Education.jsx"
 import Clients from "../components/Clients.jsx"
+import Footer from "../components/Footer.jsx"
 import SEO from "../components/Seo.jsx"
 
 const IndexPage = () => (
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <WorkExperience />
     <Education />
     <Clients />
+    <Footer />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
     </div>
   </Layout>
