@@ -1,0 +1,20 @@
+.timeline{
+	margin-bottom: 20px;
+	.event{
+		display: flex;
+		.circle{
+			display: flex;
+			background-color: white;
+			font-weight: bold;
+			border: solid #b3b5b7 2px;
+			border-radius:50%;
+			width:10px;
+			height: 10px;
+			margin-top: 10px;
+		}
+		.content{
+			color: white;
+			margin-left: 10px;
+		}
+	}
+}

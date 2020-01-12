@@ -4,9 +4,14 @@
 		margin: 40px 0;
 		.experience-description{
 			margin-left: 20px;
-			.role{
+			.organization{
 				font-size: 24px;
 				margin-bottom: 10px;
+			}
+			.timeline{
+				.timeline-item{
+					border: none;
+				}
 			}
 		}
 	}
