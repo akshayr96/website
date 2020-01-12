@@ -36,18 +36,12 @@ const Clients = () => {
 				{ logos.map(logo => {
 					const { url, width, name } = logo
 					return (
-						<div onClick={()=>window.open(url,'_blank')}>
+						<div onClick={()=>window.open(url,'_blank')} style={{border: 'solid #ccc 1px'}}>
 							<Image style={{ width, ...commonCss }} imageName={name}/>
 						</div>
 					)
 				}) }
-				{/* <Image style={{ width: '110px', height }} imageName="saint-beard.png"/>
-				<Image style={{ width: '200px', height }} imageName="nala.png" />
-				<Image style={{ width: '120px', height }} imageName="fit.jpg"/>
-				<Image style={{ width: '100px', height }} imageName="redefcorp.png"/>
-				<Image style={{ width: '110px', height }} imageName="hillstone.png"/>
-				<Image style={{ width: '210px', height }} imageName="vnr.jpeg"/> */}
-			</div>
+				</div>
 		</div>
 	 );
 }
