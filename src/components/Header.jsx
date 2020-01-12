@@ -6,7 +6,7 @@ import "./../style/Header.scss"
 const Header = ({ siteTitle }) => (
   <header>
     <div className="nav-bar">
-      <div>AR</div>
+      <div className="main-logo">AR</div>
       <ul className="nav-items">
         <li className="nav-item">Contact Me</li>
       </ul>
