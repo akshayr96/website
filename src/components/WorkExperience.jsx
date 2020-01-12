@@ -38,7 +38,7 @@ const career = [{
 const WorkExperience = () => {
 	return ( 
 		<div className="work-experience section">
-			<div className="section-header">Work Experience</div>
+			<div className="section-header">💼 Work Experience</div>
 			<div style={{ display: 'flex' }}>
 				<div>
 					{career.map((experience, key) => {
@@ -64,11 +64,11 @@ const WorkExperience = () => {
 					})}
 				</div>
 				<div className="main-description">
-					I am a full stack developer with a little over 2.5 years of experience based out of Chennai<span role="img">🇮🇳</span>
+					I am a full stack developer 🤓 with a little over 2.5 years of experience based out of Chennai<span role="img">🇮🇳</span>
 					<br/><br/>
-					I work mostly on JavaScript and Python when I code and Figma and Adobe Illustrator when I design.
+					I work mostly on JavaScript and 🐍 Python when I 💻 code and Figma and Adobe Illustrator when I ✏️ design.
 					<br/><br/>
-					Apart from my professional experience, in my Senior I've designed and developed projects for numerous non-tech startups
+					Apart from my professional experience, in my 👕 Senior Year I've designed and developed projects for numerous 📱 tech and 🥫 non-tech startups
 				</div>
 			</div>
 		</div> 
