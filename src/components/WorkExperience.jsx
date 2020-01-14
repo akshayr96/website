@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from './../components/Image'
 import Timeline from '../components/Timeline'
+import Emoji from "./Emoji"
 import "../style/WorkExperience.scss"
 
 const career = [{
@@ -38,7 +39,7 @@ const career = [{
 const WorkExperience = () => {
 	return ( 
 		<div className="work-experience section">
-			<div className="section-header">💼 Work Experience</div>
+			<div className="section-header"><Emoji symbol="💼"/> Work Experience</div>
 			<div style={{ display: 'flex' }}>
 				<div>
 					{career.map((experience, key) => {
@@ -64,11 +65,11 @@ const WorkExperience = () => {
 					})}
 				</div>
 				<div className="main-description">
-					I am a full stack developer 🤓 with a little over 2.5 years of experience based out of Chennai<span role="img">🇮🇳</span>
+					I am a full stack developer <Emoji symbol="🤓"/> with a little over 2.5 years of experience based out of Chennai.
 					<br/><br/>
-					I work mostly on JavaScript and 🐍 Python when I 💻 code and Figma and Adobe Illustrator when I ✏️ design.
+					I work mostly on JavaScript and <Emoji symbol="🐍"/> Python when I <Emoji symbol="💻"/> code and Figma and Adobe Illustrator when I <Emoji symbol="✏️"/> design.
 					<br/><br/>
-					Apart from my professional experience, in my 👕 Senior Year I've designed and developed projects for numerous 📱 tech and 🥫 non-tech startups
+					Apart from my professional experience, in my <Emoji symbol="👕"/> Senior Year I've designed and developed projects for numerous <Emoji symbol="📱"/> tech and <Emoji symbol="🍔"/> non-tech startups
 				</div>
 			</div>
 		</div> 

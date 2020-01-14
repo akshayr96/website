@@ -1,6 +1,7 @@
 import React from 'react';
 import "./../style/Clients.scss"
 import Image from "../components/Image"
+import Emoji from "./Emoji"
 
 const commonCss =  { height: '110px', margin: '10px', cursor: 'pointer' }
 const logos = [{
@@ -31,7 +32,7 @@ const logos = [{
 const Clients = () => {
 	return ( 
 		<div className="clients section">
-			<div className="section-header">😊 Trusted By</div>
+			<div className="section-header"><Emoji symbol="😊"/>Trusted By</div>
 			<div style={{ display: 'flex', justifyContent: 'space-around', padding: '20px', flexWrap: 'wrap' }}>
 				{ logos.map((logo, key) => {
 					const { url, width, name } = logo

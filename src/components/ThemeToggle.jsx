@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { AppContext } from './../Context'
 import { toggleTheme, DARK, LIGHT } from "./../utils/theme"
 import "./../style/ThemeToggle.scss"
@@ -16,7 +16,7 @@ const ThemeToggle = () => {
 		body.classList.add(theme);
 	},[theme])
 
-	const getToggleState = (themeState) => themeState == LIGHT ? NIGHT : DAY
+	const getToggleState = (themeState) => themeState === LIGHT ? NIGHT : DAY
 
 	return (
 		<div>

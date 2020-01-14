@@ -1,9 +1,10 @@
 import React from 'react';
+import Emoji from './Emoji';
 
 const Footer = () => {
 	return (
 		<div className="footer section">
-			Made with ❤️ by Akshay Ramesh
+			Made with <Emoji symbol='❤️'/> by Akshay Ramesh
 		</div>
 	);
 }
