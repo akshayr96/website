@@ -1,15 +1,16 @@
+@import "./constants.scss";
+
 .container{
 	padding: 0 calc((100vw - 1030px) / 2 );
 }
 
+
 body{
-	&.dark{
-    background-color: #1f2236;
-		color: #f7f6f3;
-  }
+	background-color: $dark-bg;
+	color: $dark-color;
   &.light{
-		background-color: #f7f6f3;
-    color: black;
+		background-color: $light-bg;
+    color: $light-color;
   }
 	font-family: 'Ubuntu', serif;
 	font-weight: 300;
