@@ -3,7 +3,14 @@
 }
 
 body{
-	color: white;
+	&.dark{
+    background-color: #1f2236;
+		color: #f7f6f3;
+  }
+  &.light{
+		background-color: #f7f6f3;
+    color: black;
+  }
 	font-family: 'Ubuntu', serif;
 	font-weight: 300;
 	.section{

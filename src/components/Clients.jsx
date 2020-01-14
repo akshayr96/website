@@ -31,7 +31,7 @@ const logos = [{
 const Clients = () => {
 	return ( 
 		<div className="clients section">
-			<div className="section-header">☺️ Trusted By</div>
+			<div className="section-header">😊 Trusted By</div>
 			<div style={{ display: 'flex', justifyContent: 'space-around', padding: '20px', flexWrap: 'wrap' }}>
 				{ logos.map((logo, key) => {
 					const { url, width, name } = logo
