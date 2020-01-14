@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
       <div className="main-logo">AR</div>
       <ul className="nav-items">
         <li className="nav-item"><ThemeToggle/></li>
-        <li className="nav-item">Contact Me</li>
+        <li className="nav-item cta">Coffee?</li>
       </ul>
     </div>
   </header>
